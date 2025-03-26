@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="zapalki.MainPage">
+
+    <ScrollView>
+        <FlexLayout Direction="Column" Padding="20">
+            <Label
+                Text="Zagraj z komputerem"
+                FontAttributes="Bold"
+                FontSize="24"
+                HorizontalOptions="Center"/>
+
+            <VerticalStackLayout>
+
+                <FlexLayout Margin="20" HeightRequest="100" JustifyContent="Center" AlignItems="Center">
+                    <Label Text="Liczba zapałek: " FontSize="25"/>
+                    <Picker x:Name="liczbaZapalekPicker" FontSize="25"/>
+                </FlexLayout>
+
+                <Button
+                    Text="Generuj nową grę"
+                    Clicked="NewGame"
+                    BackgroundColor="LightGoldenrodYellow"
+                    BorderWidth="1"
+                    BorderColor="Black"
+                    TextColor="Black"
+                    WidthRequest="200"
+                    HorizontalOptions="Center"/>
+            </VerticalStackLayout>
+
+            <VerticalStackLayout>
+                
+            <FlexLayout Direction="Row" JustifyContent="Center" AlignItems="Center" Wrap="Wrap" x:Name="imageContainer" 
+                        HorizontalOptions="Center" Margin="0,10,0,10">
+                
+            </FlexLayout>
+            </VerticalStackLayout>
+
+            <Label x:Name="liczbaZapalekLbl"
+                   IsVisible="Hidden"
+                   Text="Zostało: 20 zapałek"
+                   FontSize="18"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"/>
+
+        
+
+            <HorizontalStackLayout 
+                x:Name="buttonsContainer"
+                HorizontalOptions="Center" 
+                Margin="10"/>
+
+           
+
+            <VerticalStackLayout HeightRequest="150" >
+                <Label
+                       Text="Historia ruchów:"
+                       FontSize="20"
+                       FontAttributes="Bold"/>
+                <ScrollView>
+                    <VerticalStackLayout x:Name="logsScrollView">
+                    
+                </VerticalStackLayout>
+                </ScrollView>
+            </VerticalStackLayout>
+
+        </FlexLayout>
+    </ScrollView>
+</ContentPage>
