@@ -18,7 +18,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("zapalki")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+8bad513aa3222173df3735e0350d80a02a636317")]
 [assembly: System.Reflection.AssemblyProductAttribute("zapalki")]
 [assembly: System.Reflection.AssemblyTitleAttribute("zapalki")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
