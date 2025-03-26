@@ -15,7 +15,7 @@
         private void InitializeGame()
         {
             liczbaZapalekPicker.ItemsSource = liczbaZapalekArray;
-            liczbaZapalekPicker.SelectedIndex = 0; // Domyślna wartość
+            liczbaZapalekPicker.SelectedIndex = 0;
         }
 
         private void NewGame(object sender, EventArgs e)
@@ -28,7 +28,6 @@
             logsScrollView.Children.Clear();
             imageContainer.Children.Clear();
             buttonsContainer.Children.Clear();
-            // Generowanie zapałek jako obrazków
             for (int i = 0; i < liczbaZapalek; i++)
             {
                 var zapalka = new ImageButton
@@ -40,7 +39,6 @@
                 imageContainer.Children.Add(zapalka);
             }
 
-            // Generowanie przycisków do wyboru ilości zapałek
             for (int i = 1; i <= 3; i++)
             {
                 var button = new Button
@@ -51,7 +49,7 @@
                     TextColor = Colors.Black
                 };
                 button.Clicked += Button_Clicked;
-                button.CommandParameter = i; // Przechowuje liczbę zapałek do zabrania
+                button.CommandParameter = i; 
                 buttonsContainer.Children.Add(button);
             }
             var Label = new Label
